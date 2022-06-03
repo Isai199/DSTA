@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="home"
+        android:icon="@drawable/home_icon"/>
+
+
+    <item
+        android:id="@+id/medicinesFragment"
+        android:title="medicins"
+        android:icon="@drawable/medication_icon"/>
+
+    <item
+        android:id="@+id/memoriesFragment"
+        android:title="memories"
+        android:icon="@drawable/note_icon"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="profile"
+        android:icon="@drawable/profile_icon"/>
+
+
+
+
+</menu>

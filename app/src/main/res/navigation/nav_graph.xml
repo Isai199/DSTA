@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="app.dsta.HomeFragment"
+        android:label="@string/name_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_medicinesFragment"
+            app:destination="@id/medicinesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_memoriesFragment"
+            app:destination="@id/memoriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_reminderShowFragment"
+            app:destination="@id/reminderShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="app.dsta.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+
+        <action
+            android:id="@+id/action_profileFragment_to_reminderShowFragment"
+            app:destination="@id/reminderShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/medicinesFragment"
+        android:name="app.dsta.MedicinesFragment"
+        android:label="fragment_medicines"
+        tools:layout="@layout/fragment_medicines" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/memoriesFragment"
+        android:name="app.dsta.MemoriesFragment"
+        android:label="fragment_memories"
+        tools:layout="@layout/fragment_memories" >
+        <action
+            android:id="@+id/action_memoriesFragment_to_reminderShowFragment"
+            app:destination="@id/reminderShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reminderShowFragment"
+        android:name="app.dsta.ui.main.memories.ReminderShowFragment"
+        android:label="fragment_reminder_show"
+        tools:layout="@layout/fragment_reminder_show" >
+
+
+        <argument
+            android:name="note"
+            app:argType="app.dsta.models.notes.Note" />
+        <action
+            android:id="@+id/action_reminderShowFragment_to_memoriesFragment"
+            app:destination="@id/memoriesFragment" />
+    </fragment>
+</navigation>

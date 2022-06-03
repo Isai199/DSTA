@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2">
+
+
+    <EditText
+        android:id="@+id/idEdtReminderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Selecciona un titulo"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+    <EditText
+        android:id="@+id/idEdtReminderDuedate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idEdtReminderTitle"
+        android:layout_margin="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:hint="¿Cuándo quieres que caduque?"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/idEdtReminderState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idEdtReminderDuedate"
+        android:layout_margin="10dp"
+        android:hint="Selecciona el estado de la nota"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <!--edit text for note description-->
+    <EditText
+        android:id="@+id/idEdtReminderDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/idBtnReminderSave"
+        android:layout_below="@id/idEdtReminderState"
+        android:layout_margin="10dp"
+        android:background="@color/color4"
+        android:gravity="start|top"
+        android:hint="Descripcion"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+
+    <!--button for saving and updating a note-->
+    <android.widget.Button
+        android:id="@+id/idBtnReminderSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_button"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

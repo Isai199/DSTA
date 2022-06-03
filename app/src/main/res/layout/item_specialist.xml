@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <ImageView
+        android:id="@+id/ivAvatarSpecialist"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/tvSpecialistNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivAvatarSpecialist"
+        android:layout_toEndOf="@+id/ivAvatarSpecialist"
+        tools:text= "names" />
+    <TextView
+        android:id="@+id/tvSpecialistEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/tvSpecialistNames"
+        android:layout_toRightOf="@+id/ivAvatarSpecialist"
+        android:layout_toEndOf="@+id/ivAvatarSpecialist"
+        tools:text = "email"/>
+    <TextView
+        android:id="@+id/tvSpecialistPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/tvSpecialistEmail"
+        android:layout_toRightOf="@+id/ivAvatarSpecialist"
+        android:layout_toEndOf="@+id/ivAvatarSpecialist"
+        tools:text = "phone"/>
+    <TextView
+        android:id="@+id/tvSpecialistCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/tvSpecialistPhone"
+        android:layout_toRightOf="@+id/ivAvatarSpecialist"
+        android:layout_toEndOf="@+id/ivAvatarSpecialist"
+        tools:text = "city"/>
+
+
+    <ImageView
+        android:id="@+id/ivSpecialistFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:padding="3dp"
+        android:src="@drawable/ic_favorite_border" />
+
+
+
+</RelativeLayout>
